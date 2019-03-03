@@ -66,7 +66,8 @@ public class DiscordRichPresence extends Structure
             "instance"
     ));
 
-    public DiscordRichPresence(String encoding) {
+    // mdashl: Try to support very old versions of JNA
+    /*public DiscordRichPresence(String encoding) {
         super();
         setStringEncoding(encoding);
     }
@@ -74,6 +75,7 @@ public class DiscordRichPresence extends Structure
     public DiscordRichPresence() {
         this("UTF-8");
     }
+    */
 
     /**
      * The user's current party status.
